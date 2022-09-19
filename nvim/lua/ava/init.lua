@@ -1,0 +1,6 @@
+require('ava.basics')
+require('ava.colors')
+require('ava.telescope-config')
+require('ava.lsp')
+require('ava.gitsigns')
+require('ava.autopairs-config')
