@@ -93,7 +93,8 @@ myawesomemenu = {
 
 mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "Open Terminal", terminal },
-                                    { "Browser","firefox" }
+                                    { "Browser","firefox" },
+                                    { "Files","thunar"}
                                   }
                         })
 
@@ -223,8 +224,10 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+    awful.key({ modkey }, "r", function() menubar.show() end,
+              {description = "show the menubar", group = "launcher"}),
+    awful.key({ modkey }, "p", function() awful.spawn("rofi -show drun") end,
+              {description = "show the application menu", group = "launcher"})
 )
 
 clientkeys = gears.table.join(
@@ -338,6 +341,8 @@ clientbuttons = gears.table.join(
 -- Set keys
 root.keys(globalkeys)
 -- }}}
+
+-- awful.key({metakey}, 'r', function() awful.util.spawn('rofi -show drun') end, {description='run rofi', group='launcher'}),
 
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
@@ -463,13 +468,13 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- }}}
 
-beautiful.menu_height = 20
+beautiful.menu_height = 30
 beautiful.menu_width = 180
 beautiful.useless_gap = 5
 
 --{{{ auto startup
     awful.spawn.with_shell("picom")
-    awful.spawn.with_shell("nitrogen --set-zoom-fill --random /usr/share/endeavouros/backgrounds/eos_wallpapers_community")
+    awful.spawn.with_shell("nitrogen --set-zoom-fill --random /usr/share/endeavouros/backgrounds/xfce")
     awful.spawn.with_shell("/home/overlord/.config/polybar/launch.sh")
 -- }}}
 
