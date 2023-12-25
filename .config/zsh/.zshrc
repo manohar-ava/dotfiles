@@ -57,7 +57,6 @@ zstyle :compinstall filename '/home/overlord/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-source $ZDOTDIR/plugins/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.config//zsh//.p10k.zsh.
 [[ ! -f ~/.config//zsh//.p10k.zsh ]] || source ~/.config//zsh//.p10k.zsh
