@@ -4,12 +4,9 @@ window:
   dimensions:
     columns: 140
     lines: 38
-  padding:
-    x: 35
-    y: 35
   decorations: full #Still won't show in a window manger, but will in a desktop environment
 scrolling:
-  history: 10000
+  history: 100000
   multiplier: 3
 window.dynamic_title: true
 env:
