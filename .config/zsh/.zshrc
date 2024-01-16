@@ -57,6 +57,10 @@ zstyle :compinstall filename '/home/overlord/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 # To customize prompt, run `p10k configure` or edit ~/.config//zsh//.p10k.zsh.
 [[ ! -f ~/.config//zsh//.p10k.zsh ]] || source ~/.config//zsh//.p10k.zsh
+
+# bun completions
+[ -s "/home/overlord/.bun/_bun" ] && source "/home/overlord/.bun/_bun"
