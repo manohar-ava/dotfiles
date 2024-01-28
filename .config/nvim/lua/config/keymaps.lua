@@ -25,4 +25,10 @@ api.nvim_set_keymap("v", "<C-_>", "gcc", { noremap = false })
 -- mapkey("i", "jj", "<ESC>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("n", "<Space>w", ":w<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true, silent = true })
+
+--vertical move and search to middle of screen
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")

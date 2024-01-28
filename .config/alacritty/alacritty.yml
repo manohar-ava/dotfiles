@@ -1,6 +1,6 @@
 
 window:
-  opacity: .7
+  opacity: .85
   dimensions:
     columns: 140
     lines: 38
@@ -91,3 +91,5 @@ cursor:
 
 key_bindings:
   - { key: N, mods: Control, action: SpawnNewInstance }
+  - { key: PageUp,  action: ScrollLineUp }
+  - { key: PageDown, action: ScrollLineDown }
