@@ -1,4 +1,3 @@
-
 window:
   opacity: .85
   dimensions:
@@ -7,14 +6,11 @@ window:
   padding:
     x: 20 
     y: 20 
-  decorations: full #Still won't show in a window manger, but will in a desktop environment
-scrolling:
-  history: 10000
-  multiplier: 3
-window.dynamic_title: true
+  # decorations: none
+
 env:
   TERM: xterm-256color
-# Font Customization
+
 font:
   normal:
     family: Mononoki Nerd Font
@@ -32,64 +28,145 @@ font:
     family: Mononoki Nerd Font
     style: Light Italic
   size: 14
-  offset:
-    x: 0
-    y: 0
-  glyph_offset:
-    x: 0
-    y: 0
-  debug:
-    persistent_logging: false
-draw_bold_text_with_bright_colors: true
 
+#kanagawa theme
 colors:
-  cursor:
-    text: CellBackground
-    cursor: CellForeground
-# Hepburn
+  footer_bar:
+    foreground: '#0f111a'  # kanagawa background color
+    background: '#a6adc8'  # subtext0
   primary:
-    background: '0x000000'
-    foreground: '0xfbf1c7'
-  normal:
-    black:   '0x282828'
-    red:     '0xcc241d'
-    green:   '0x98971a'
-    yellow:  '0xd79921'
-    blue:    '0x458588'
-    magenta: '0xb16286'
-    cyan:    '0x689d6a'
-    white:   '0xa89984'
-  bright:
-    black:   '0x928374'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xebdbb2'
-
-  indexed_colors:
-    - { index: 16, color: '0xdc9656' }
-    - { index: 17, color: '0xa16946' }
-    - { index: 18, color: '0x282828' }
-    - { index: 19, color: '0x383838' }
-    - { index: 20, color: '0xb8b8b8' }
-    - { index: 21, color: '0xe8e8e8' }
-
+    background: '#0f111a'  # Kanagawa background color
+    foreground: '#c0c5ce'  # Kanagawa foreground color
+  cursor:
+    text: '#0f111a'         # Kanagawa background color
+    cursor: '#f5e0dc'       # Rosewater
+  vi_mode_cursor:
+    text: '#0f111a'         # Kanagawa background color
+    cursor: '#b4befe'       # Lavender
+  search:
+    matches:
+      foreground: '#0f111a'  # Kanagawa background color
+      background: '#a6adc8'  # Subtext0
+    focused_match:
+      foreground: '#0f111a'  # Kanagawa background color
+      background: '#a6e3a1'  # Green
+  hints:
+    start:
+      foreground: '#0f111a'  # Kanagawa background color
+      background: '#f9e2af'  # Yellow
+    end:
+      foreground: '#0f111a'  # Kanagawa background color
+      background: '#a6adc8'  # Subtext0
   selection:
-    text: '0xffffff'
-    background: '0xdc3232'
-    white:   '0xffffff'
+    text: '#0f111a'          # Kanagawa background color
+    background: '#f5e0dc'    # Rosewater
+  normal:
+    black: '#1b1d26'         # Kanagawa dark background
+    red: '#e06c75'           # Red
+    green: '#98c379'         # Green
+    yellow: '#e5c07b'        # Yellow
+    blue: '#61afef'          # Blue
+    magenta: '#c678dd'       # Magenta
+    cyan: '#56b6c2'          # Cyan
+    white: '#cbccc6'         # Kanagawa light text color
+  bright:
+    black: '#5c6370'         # Kanagawa medium dark background
+    red: '#ff5370'           # Bright Red
+    green: '#c3e88d'         # Bright Green
+    yellow: '#ffcb6b'        # Bright Yellow
+    blue: '#82aaff'          # Bright Blue
+    magenta: '#c792ea'       # Bright Magenta
+    cyan: '#89ddff'          # Bright Cyan
+    white: '#d0d0d0'         # Bright White
+  dim:
+    black: '#1b1d26'         # Kanagawa dark background
+    red: '#e06c75'           # Red
+    green: '#98c379'         # Green
+    yellow: '#e5c07b'        # Yellow
+    blue: '#61afef'          # Blue
+    magenta: '#c678dd'       # Magenta
+    cyan: '#56b6c2'          # Cyan
+    white: '#cbccc6'         # Kanagawa light text color
+  indexed_colors:
+    - { index: 16, color: '#fab387' }
+    - { index: 17, color: '#f5e0dc' }
 
-cursor:
-  style:
-    shape: Beam
-    blinking: off
-    blink-interval: 750
-    unfocused_hollow: true
-
-key_bindings:
-  - { key: N, mods: Control, action: SpawnNewInstance }
-  - { key: PageUp,  action: ScrollLineUp }
-  - { key: PageDown, action: ScrollLineDown }
+# catppuccin colourscheme
+#colors:
+#    primary:
+#        background: "#1E1E2E" # base
+#        foreground: "#CDD6F4" # text
+#        # Bright and dim foreground colors
+#        dim_foreground: "#CDD6F4" # text
+#        bright_foreground: "#CDD6F4" # text
+#
+#    # Cursor colors
+#    cursor:
+#        text: "#1E1E2E" # base
+#        cursor: "#F5E0DC" # rosewater
+#    vi_mode_cursor:
+#        text: "#1E1E2E" # base
+#        cursor: "#B4BEFE" # lavender
+#
+#    # Search colors
+#    search:
+#        matches:
+#            foreground: "#1E1E2E" # base
+#            background: "#A6ADC8" # subtext0
+#        focused_match:
+#            foreground: "#1E1E2E" # base
+#            background: "#A6E3A1" # green
+#        footer_bar:
+#            foreground: "#1E1E2E" # base
+#            background: "#A6ADC8" # subtext0
+#
+#    # Keyboard regex hints
+#    hints:
+#        start:
+#            foreground: "#1E1E2E" # base
+#            background: "#F9E2AF" # yellow
+#        end:
+#            foreground: "#1E1E2E" # base
+#            background: "#A6ADC8" # subtext0
+#
+#    # Selection colors
+#    selection:
+#        text: "#1E1E2E" # base
+#        background: "#F5E0DC" # rosewater
+#
+#    # Normal colors
+#    normal:
+#        black: "#45475A" # surface1
+#        red: "#F38BA8" # red
+#        green: "#A6E3A1" # green
+#        yellow: "#F9E2AF" # yellow
+#        blue: "#89B4FA" # blue
+#        magenta: "#F5C2E7" # pink
+#        cyan: "#94E2D5" # teal
+#        white: "#BAC2DE" # subtext1
+#
+#    # Bright colors
+#    bright:
+#        black: "#585B70" # surface2
+#        red: "#F38BA8" # red
+#        green: "#A6E3A1" # green
+#        yellow: "#F9E2AF" # yellow
+#        blue: "#89B4FA" # blue
+#        magenta: "#F5C2E7" # pink
+#        cyan: "#94E2D5" # teal
+#        white: "#A6ADC8" # subtext0
+#
+#    # Dim colors
+#    dim:
+#        black: "#45475A" # surface1
+#        red: "#F38BA8" # red
+#        green: "#A6E3A1" # green
+#        yellow: "#F9E2AF" # yellow
+#        blue: "#89B4FA" # blue
+#        magenta: "#F5C2E7" # pink
+#        cyan: "#94E2D5" # teal
+#        white: "#BAC2DE" # subtext1
+#
+#    indexed_colors:
+#        - { index: 16, color: "#FAB387" }
+#        - { index: 17, color: "#F5E0DC" }
