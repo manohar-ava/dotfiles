@@ -7,7 +7,8 @@ alias vim="nvim"
 alias	ls="ls -lah --color=auto --group-directories-first" 
 alias df='df -h'  
 alias free='free -m'
-alias tmux='tmux -u'
+alias sd="cd ~ && cd \$(find * -type d | fzf)"
+
 # Git Aliases
 alias gpush="git push"
 alias gpull="git pull --prune"
@@ -16,6 +17,7 @@ alias ga="git add ."
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 # Tmux
+alias tmux="tmux -u"
 alias tkill="tmux kill-session -t"
 alias tlist="tmux list-sessions"
 alias tattach="tmux attach"
