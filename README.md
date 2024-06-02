@@ -4,6 +4,9 @@
 
 This readme provides information on the changes made to the `zshenv` file during the setup of dotfiles. The purpose of these changes is to enhance the configuration and organization of the Zsh environment, particularly by adhering to the XDG Base Directory Specification.
 
+##
+install node,go,python3.XX-venv,npm,luarocks
+
 ## Changes Made
 
 The following changes have been made to the `etc/zsh/zshenv` file:
