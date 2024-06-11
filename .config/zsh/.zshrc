@@ -64,9 +64,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # bun completions
 [ -s "/home/overlord/.bun/_bun" ] && source "/home/overlord/.bun/_bun"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPS="--extended"
-
 # pnpm
 export PNPM_HOME="/home/manu/.local/share/pnpm"
 case ":$PATH:" in
@@ -74,3 +71,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export PATH="$PATH:/opt/nvim/"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
