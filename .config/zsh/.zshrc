@@ -73,5 +73,7 @@ esac
 # pnpm end
 
 export PATH="$PATH:/opt/nvim/"
+export PATH=$PATH:~/zig
+export PATH=$PATH:~/Odin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

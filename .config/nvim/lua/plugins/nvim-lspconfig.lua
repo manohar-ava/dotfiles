@@ -34,6 +34,27 @@ local config = function()
 		},
 	})
 
+	--zig
+	lspconfig.zls.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		filetypes = { "zig" },
+	})
+
+	lspconfig.ols.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		filetypes = { "odin" },
+	})
+
+	--rust
+	lspconfig.rust_analyzer.setup({
+		on_attach = on_attach,
+		capabilities = capabilities,
+		filetypes = { "rust" },
+		root_dir = lspconfig.util.root_pattern("Cargo.toml"),
+	})
+
 	-- go
 	lspconfig.gopls.setup({
 		capabilities = capabilities,
