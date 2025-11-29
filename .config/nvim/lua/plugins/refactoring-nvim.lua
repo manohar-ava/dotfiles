@@ -1,0 +1,42 @@
+return {}
+-- return {
+-- 	"ThePrimeagen/refactoring.nvim",
+-- 	dependencies = {
+-- 		"nvim-lua/plenary.nvim",
+-- 		"nvim-treesitter/nvim-treesitter",
+-- 	},
+-- 	-- optional: load eagerly (change to `true` / omit for lazy load as per your preference)
+-- 	lazy = false,
+-- 	opts = {}, -- you may pass setup options here
+-- 	config = function()
+-- 		require("refactoring").setup({
+-- 			-- you can override default options here, e.g.:
+-- 			prompt_func_return_type = {
+-- 				go = false,
+-- 				java = false,
+-- 				-- ...
+-- 			},
+-- 			prompt_func_param_type = {
+-- 				go = false,
+-- 				java = false,
+-- 				-- ...
+-- 			},
+-- 			printf_statements = {},
+-- 			print_var_statements = {},
+-- 			show_success_message = true, -- or false, as you like
+-- 		})
+--
+-- 		-- example keymaps for common refactors:
+-- 		vim.keymap.set("x", "<leader>re", ":Refactor extract<Space>") -- extract function from visual selection
+-- 		vim.keymap.set("x", "<leader>rv", ":Refactor extract_var<Space>") -- extract variable
+-- 		vim.keymap.set({ "n", "x" }, "<leader>ri", ":Refactor inline_var") -- inline var
+-- 		vim.keymap.set({ "n", "x" }, "<leader>rI", ":Refactor inline_func") -- inline function
+-- 		vim.keymap.set({ "n", "x" }, "<leader>rb", ":Refactor extract_block") -- extract block
+-- 		vim.keymap.set({ "n", "x" }, "<leader>rbf", ":Refactor extract_block_to_file") -- extract block to file
+--
+-- 		-- optional: prompt UI to select refactor
+-- 		vim.keymap.set({ "n", "x" }, "<leader>rr", function()
+-- 			require("refactoring").select_refactor()
+-- 		end)
+-- 	end,
+-- }

@@ -1,10 +1,10 @@
 -- ================================================================================================
--- TITLE : vim-tmux-navigator
--- ABOUT : Seamless navigation between Vim splits and tmux panes using the same shortcuts.
+-- TITLE : vim-fugitive
+-- ABOUT : A Git wrapper plugin for Vim and Neovim. Provides powerful Git integration and commands.
 -- LINKS :
---   > github : https://github.com/christoomey/vim-tmux-navigator
+--   > github : https://github.com/tpope/vim-fugitive
 -- ================================================================================================
 
 return {
-	"christoomey/vim-tmux-navigator",
+	"tpope/vim-fugitive",
 }

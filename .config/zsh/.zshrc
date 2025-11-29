@@ -51,7 +51,7 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-R
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/overlord/.zshrc'
+zstyle :compinstall filename '/home/manoharharinath/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -61,19 +61,20 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # To customize prompt, run `p10k configure` or edit ~/.config//zsh//.p10k.zsh.
 [[ ! -f ~/.config//zsh//.p10k.zsh ]] || source ~/.config//zsh//.p10k.zsh
 
-# bun completions
-[ -s "/home/overlord/.bun/_bun" ] && source "/home/overlord/.bun/_bun"
-
-# pnpm
-export PNPM_HOME="/home/manu/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 
 export PATH="$PATH:/opt/nvim/"
 export PATH=$PATH:~/zig
 export PATH=$PATH:~/Odin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+export M2_HOME=/opt/maven
+export MAVEN_HOME=/opt/maven
+export PATH=$PATH:/opt/maven/bin
+
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH

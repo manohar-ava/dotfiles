@@ -14,7 +14,6 @@ alias gpush="git push"
 alias gpull="git pull --prune"
 alias gc="git commit -m"
 alias ga="git add ."
-alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 # Tmux
 alias tmux="tmux -u"
@@ -22,5 +21,3 @@ alias tkill="tmux kill-session -t"
 alias tlist="tmux list-sessions"
 alias tattach="tmux attach"
 
-# dotfiles
-alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'

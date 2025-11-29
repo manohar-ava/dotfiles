@@ -1,106 +1,41 @@
-[[colors.indexed_colors]]
-color = "#fab387"
-index = 16
+# --- General ---
+[general]
+import = [
+    "~/.config/alacritty/themes/tokyo_night.toml"
+]
 
-[[colors.indexed_colors]]
-color = "#f5e0dc"
-index = 17
-
-[colors.bright]
-black = "#5c6370"
-blue = "#82aaff"
-cyan = "#89ddff"
-green = "#c3e88d"
-magenta = "#c792ea"
-red = "#ff5370"
-white = "#d0d0d0"
-yellow = "#ffcb6b"
-
-[colors.cursor]
-cursor = "#f5e0dc"
-text = "#0f111a"
-
-[colors.dim]
-black = "#1b1d26"
-blue = "#61afef"
-cyan = "#56b6c2"
-green = "#98c379"
-magenta = "#c678dd"
-red = "#e06c75"
-white = "#cbccc6"
-yellow = "#e5c07b"
-
-[colors.footer_bar]
-background = "#a6adc8"
-foreground = "#0f111a"
-
-[colors.hints.end]
-background = "#a6adc8"
-foreground = "#0f111a"
-
-[colors.hints.start]
-background = "#f9e2af"
-foreground = "#0f111a"
-
-[colors.normal]
-black = "#1b1d26"
-blue = "#61afef"
-cyan = "#56b6c2"
-green = "#98c379"
-magenta = "#c678dd"
-red = "#e06c75"
-white = "#cbccc6"
-yellow = "#e5c07b"
-
-[colors.primary]
-background = "#0f111a"
-foreground = "#c0c5ce"
-
-[colors.search.focused_match]
-background = "#a6e3a1"
-foreground = "#0f111a"
-
-[colors.search.matches]
-background = "#a6adc8"
-foreground = "#0f111a"
-
-[colors.selection]
-background = "#f5e0dc"
-text = "#0f111a"
-
-[colors.vi_mode_cursor]
-cursor = "#b4befe"
-text = "#0f111a"
-
-[env]
-TERM = "xterm-256color"
-
-[font]
-size = 14
-
-[font.bold]
-family = "Mononoki Nerd Font"
-style = "Light"
-
-[font.bold_italic]
-family = "Mononoki Nerd Font"
-style = "Light Italic"
-
-[font.italic]
-family = "Mononoki Nerd Font"
-style = "Extra Light Italic"
-
-[font.normal]
-family = "Mononoki Nerd Font"
-style = "ExtraLight"
-
+# --- Window ---
 [window]
-opacity = 0.85
+startup_mode = "Maximized"
+padding = { x = 6, y = 6 }
+decorations = "none"
+opacity = 0.8
 
-[window.dimensions]
-columns = 140
-lines = 38
+# --- Font ---
+[font]
+size = 14.0
 
-[window.padding]
-x = 20
-y = 20
+normal = { family = "Mononoki Nerd Font Mono", style = "Regular" }
+bold = { family = "Mononoki Nerd Font Mono", style = "Bold" }
+italic = { family = "Mononoki Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "Mononoki Nerd Font Mono", style = "Bold Italic" }
+
+offset = { x = 0, y = 1 }
+glyph_offset = { x = 0, y = 0 }
+
+# --- Cursor ---
+[cursor]
+vi_mode_style = "Block"
+
+[cursor.style]
+shape = "Beam"
+blinking = "On"
+
+# --- Scrolling ---
+[scrolling]
+history = 10000
+multiplier = 3
+
+# --- Mouse ---
+[mouse]
+hide_when_typing = true

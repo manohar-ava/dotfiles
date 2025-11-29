@@ -1,0 +1,8 @@
+space-bar@luchrioh
+tactile@lundal.io
+switcher@landau.fi
+just-perfection-desktop@just-perfection
+ding@rastersoft.com
+tiling-assistant@ubuntu.com
+ubuntu-appindicators@ubuntu.com
+ubuntu-dock@ubuntu.com

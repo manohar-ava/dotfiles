@@ -1,1 +1,37 @@
-.zcompdump
+# --- General ---
+*.swp
+*.swo
+*.tmp
+*~
+# --- ZSH ---
+# Oh-My-Zsh or other frameworks (don't commit these)
+.zsh_history
+.zsh_sessions
+.zcompdump*
+.antigen/
+.oh-my-zsh/
+.cache/
+
+# If using zinit:
+.zinit/
+
+# --- Alacritty ---
+# No runtime files normally, but just in case:
+*.log
+
+# --- TMUX ---
+# TPM (tmux plugin manager) – plugins should NOT be committed
+.config/tmux/plugins/
+
+# tmux runtime artifacts
+.tmux.conf.local
+tmux_resurrect/
+tmuxinator/*.lock
+*.tmux.swp
+
+# --- Shell environment ---
+.env
+.envrc
+.nodenv/
+pyenv/
+rbenv/
