@@ -6,6 +6,7 @@ vim.pack.add({
 	"https://www.github.com/echasnovski/mini.nvim",
 	"https://www.github.com/ibhagwan/fzf-lua",
 	"https://www.github.com/nvim-tree/nvim-tree.lua",
+	"https://github.com/rebelot/kanagawa.nvim",
 	{
 		src = "https://github.com/nvim-treesitter/nvim-treesitter",
 		branch = "main",
@@ -134,7 +135,12 @@ require("nvim-tree").setup({
 	renderer = {
 		group_empty = true,
 	},
+	update_focused_file = {
+		enable = true,
+		update_root = false,
+	},
 })
+
 vim.keymap.set("n", "<leader>e", function()
 	require("nvim-tree.api").tree.toggle()
 end, { desc = "Toggle NvimTree" })
