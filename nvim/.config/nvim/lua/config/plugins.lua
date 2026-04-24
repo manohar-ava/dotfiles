@@ -33,7 +33,6 @@ vim.pack.add({
 	"https://github.com/nvim-tree/nvim-web-devicons",
 	"https://github.com/folke/noice.nvim",
 	"https://github.com/MunifTanjim/nui.nvim",
-	"https://github.com/rcarriga/nvim-notify",
 	"https://github.com/sphamba/smear-cursor.nvim",
 	{
 		src = "https://github.com/ThePrimeagen/harpoon",
@@ -67,7 +66,6 @@ packadd("harpoon")
 packadd("nvim.undotree")
 packadd("hardtime.nvim")
 packadd("nui.nvim")
-packadd("nvim-notify")
 packadd("noice.nvim")
 
 -- ============================================================================
@@ -335,12 +333,11 @@ require("lualine").setup({
 --noice
 require("noice").setup({
 	cmdline = {
-		enabled = true,
+		enabled = false,
 		view = "cmdline_popup",
 	},
 	messages = {
-		enabled = true,
-		view = "mini",
+		enabled = false,
 	},
 	lsp = {
 		progress = { enabled = true },

@@ -1,4 +1,3 @@
-
 local augroup = vim.api.nvim_create_augroup("FormatOnSave", { clear = true })
 vim.api.nvim_create_autocmd("BufWritePre", {
 	group = augroup,
@@ -53,4 +52,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.hl.on_yank()
 	end,
 })
-
