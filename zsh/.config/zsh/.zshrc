@@ -74,6 +74,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export M2_HOME=/opt/maven
 export MAVEN_HOME=/opt/maven
 export PATH=$PATH:/opt/maven/bin
+export PATH="$HOME/.local/bin:$PATH"
 
 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64

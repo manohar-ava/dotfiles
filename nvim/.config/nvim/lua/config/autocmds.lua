@@ -1,7 +1,14 @@
+local format_on_save_enabled = true
+
 local augroup = vim.api.nvim_create_augroup("FormatOnSave", { clear = true })
+
 vim.api.nvim_create_autocmd("BufWritePre", {
 	group = augroup,
 	callback = function(args)
+		if not format_on_save_enabled then
+			return
+		end
+
 		local buf = args.buf
 
 		if vim.bo[buf].buftype ~= "" or not vim.bo[buf].modifiable then
@@ -23,6 +30,12 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 		end
 	end,
 })
+
+-- Create toggle command
+vim.api.nvim_create_user_command("FormatOnSaveToggle", function()
+	format_on_save_enabled = not format_on_save_enabled
+	print("Format on save: " .. (format_on_save_enabled and "ON" or "OFF"))
+end, {})
 
 -- return to last cursor position
 vim.api.nvim_create_autocmd("BufReadPost", {
