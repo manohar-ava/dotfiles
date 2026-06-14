@@ -32,7 +32,7 @@ sketchybar --add item spacer.2 left \
 
 sketchybar --add bracket spaces '/space.*/' \
 	--set spaces background.border_width="$BORDER_WIDTH" \
-	background.border_color="$COMMENT" \
+	background.border_color="$BLUE" \
 	background.corner_radius="$CORNER_RADIUS" \
 	background.color="$BAR_COLOR" \
 	background.height=26 \

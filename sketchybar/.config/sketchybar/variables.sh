@@ -15,7 +15,6 @@ COMMENT=0xff54546D
 
 TRANSPARENT=0x00000000
 
-# General bar colors
 ICON_COLOR=$WHITE  # Color of all icons
 LABEL_COLOR=$WHITE # Color of all labels
 
@@ -24,7 +23,7 @@ PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
 FONT="Mononoki Nerd Font"
 
-PADDINGS=3
+PADDINGS=4
 
 POPUP_BORDER_WIDTH=2
 POPUP_CORNER_RADIUS=11
