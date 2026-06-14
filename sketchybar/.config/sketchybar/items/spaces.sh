@@ -15,8 +15,8 @@ for sid in $(aerospace list-workspaces --all); do
 		icon="${SPACE_ICONS[$sid - 1]}" \
 		icon.color="$COMMENT" \
 		label.drawing=off \
-		icon.padding_left=10 \
-		icon.padding_right=10 \
+		icon.padding_left=15 \
+		icon.padding_right=15 \
 		background.padding_left=-5 \
 		background.padding_right=-5 \
 		background.drawing=off \

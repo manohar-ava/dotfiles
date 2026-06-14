@@ -23,7 +23,7 @@ PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
 FONT="Mononoki Nerd Font"
 
-PADDINGS=4
+PADDINGS=3
 
 POPUP_BORDER_WIDTH=2
 POPUP_CORNER_RADIUS=11
