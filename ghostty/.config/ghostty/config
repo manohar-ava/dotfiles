@@ -1,0 +1,23 @@
+# =====================
+# FONT
+# =====================
+font-family = Mononoki
+font-size = 16
+
+# =====================
+# THEME
+# =====================
+theme = Kanagawa Wave
+
+# =====================
+# UI / FEEL
+# =====================
+background-opacity = 0.92
+
+window-padding-x = 12
+window-padding-y = 12
+
+cursor-style = block
+
+copy-on-select = true
+confirm-close-surface = false
