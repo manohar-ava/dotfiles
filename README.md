@@ -1,5 +1,8 @@
 # Dotfiles Setup - zshenv Configuration
 
+> **Looking for keymaps, plugins, or how the whole stack fits together?**
+> See **[CHEATSHEET.md](CHEATSHEET.md)** — Neovim · tmux · AeroSpace · Ghostty on one page.
+
 ## Overview
 
 This readme provides information on the changes made to the `zshenv` file during the setup of dotfiles. The purpose of these changes is to enhance the configuration and organization of the Zsh environment, particularly by adhering to the XDG Base Directory Specification.
