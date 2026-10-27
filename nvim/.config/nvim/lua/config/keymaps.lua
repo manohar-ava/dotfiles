@@ -57,6 +57,8 @@ vim.keymap.set("n", "<leader>td", function()
 	vim.diagnostic.enable(not vim.diagnostic.is_enabled())
 end, { desc = "Toggle diagnostics" })
 
+vim.keymap.set("n", "<leader>tf", "<Cmd>FormatOnSaveToggle<CR>", { desc = "Toggle format on save" })
+
 -- File Explorer
 vim.keymap.set("n", "<leader>m", "<Cmd>NvimTreeFocus<CR>", { desc = "Focus on File Explorer" })
 vim.keymap.set("n", "<leader>e", "<Cmd>NvimTreeToggle<CR>", { desc = "Toggle File Explorer" })
